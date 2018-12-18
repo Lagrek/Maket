@@ -22,7 +22,7 @@ $pdo = new PDO($dsn, $user, $pass, $opt);
 
 $pattern_Name = "/[a-zA-Z]{3,50}/";
 $pattern_Email = "/[a-zA-Z]{1,50}/";
-$pattern_Phone = "/[0-9]{11,11}/";
+$pattern_Phone = "/\d{11,11}/";
 if(!preg_match($pattern_Name, $Name)){
 echo 'It`s not working';
 }
